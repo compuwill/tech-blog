@@ -1,3 +1,5 @@
+const exphbs = require('express-handlebars');
+
 module.exports = {
   format_date: (date) => {
     return `${new Date(date).getMonth() + 1}/${new Date(
@@ -21,4 +23,10 @@ module.exports = {
       .split('/')[0]
       .split('?')[0];
   },
+
+  // breaklines: text => {
+  //   text = exphbs.Utils.escapeExpression(text);
+  //   text = text.replace(/(\r\n|\n|\r)/gm, '<br>');
+  //   return new exphbs.SafeString(text);
+  // }
 };
