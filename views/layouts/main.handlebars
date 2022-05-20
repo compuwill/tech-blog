@@ -1,37 +1,45 @@
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Just Tech News</title>
-    <link rel="stylesheet" href="/stylesheets/style.css" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tech Blog</title>
+  <link rel="stylesheet" href="/stylesheets/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link rel="stylesheet" href="/stylesheets/overwrite.css" />
+</head>
 
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1>
-          <a href="/">Just Tech News</a>
+<body>
+  <div class="wrapper">
+    <header>
+
+      <nav class="navbar">
+        <h1 class="navbar-item is-size-3	">
+          <a href="/">Tech Blog</a>
         </h1>
-        <nav>
+
+        <div class="navbar-end">
+
           {{#if loggedIn}}
-            <a href="/dashboard">dashboard</a>
-            <button id="logout" class="btn-no-style">logout</button>
+          <a href="/dashboard" class="navbar-item">dashboard</a>
+          <button id="logout" class="btn-no-style navbar-item">logout</button>
           {{else}}
-            <a href="/login">login</a>
+          <a href="/login" class="navbar-item">login</a>
           {{/if}}
-        </nav>
-      </header>
-      <main>
-        {{{body}}}
-      </main>
-      <footer>
-        Thanks for visiting!
-      </footer>
-    </div>
-    {{#if loggedIn}}
-      <script src="/javascript/logout.js"></script>
-    {{/if}}
-  </body>
+        </div>
+
+      </nav>
+    </header>
+    <main>
+      {{{body}}}
+    </main>
+    <footer>
+      The best place for tech related blogs!
+    </footer>
+  </div>
+  {{#if loggedIn}}
+  <script src="/javascript/logout.js"></script>
+  {{/if}}
+</body>
 
 </html>
