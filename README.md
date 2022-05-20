@@ -8,14 +8,10 @@
 - [Usage](#usage)
 
 ## Description
-We created a gambling game similar to Yahtzee.
-#### Summary of Game Prize:
-##### &bull; A Straight&nbsp; :  100 x Bet
-##### &bull; 5 of a kind : 100 x Bet Amount
-##### &bull; 4 of a kind :  50 x Bet
-##### &bull; 3 of a kind :   5 x Bet
+This is a CMS-style blog site similar to a Wordpress site, where developers can publish their blog posts and comment on other developers’ posts as well.
 
-![image](https://user-images.githubusercontent.com/22924230/162866331-9b432be4-f390-4e84-b559-b656b253cf33.png)
+![image](https://user-images.githubusercontent.com/22924230/169448407-9a488f1c-81bc-4e91-b3e4-d418e1bc1bd6.png)
+
 
 ### Technologies
 - Express Node.Js Based
