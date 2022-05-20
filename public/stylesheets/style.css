@@ -136,6 +136,7 @@
   }
   
   .upvote-btn {
+    /* padding: 2 4; */
     background-color: #197d0f;
     transition: background-color .1s;
   }
